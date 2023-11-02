@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit User</h1>
+    <form action="" method="post">
+        <input type="text" name="name" placeholder="Edit Name" value="<%=user.name%>">
+        <br>
+        <input type="email" name="email" placeholder="Edit Email" value="<%=user.email%>">
+        <br>
+        <input type="text" name="mobile" placeholder="Edit Phone Number" value="<%=user.mobile%>">
+        <br>
+        <input type="submit" value="Update User">
+        <br>
+        
+        <input type="hidden" name="id" value="<%=user._id%>">
+
+
+    </form>
+
+    <a href="/admin/dashboard">Go dashboard</a>
+</body>
+</html>
